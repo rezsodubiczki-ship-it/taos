@@ -1,0 +1,29 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "@/assets/hero.png";
+---
+
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-8 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 w-full max-w-md mx-auto lg:max-w-none lg:order-1">
+    <Picture
+      src={heroImage}
+      alt="Astronaut in the air"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 1024px) 90vw, 620px"
+      loading="eager"
+      format="avif"
+      class="w-full h-auto"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Run Faster Together.
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Academy of Speed is a community of runners driven to improve, compete and reach their full potential.
+With expert coaching, purposeful training and a team that pushes each other forward, we turn ambition into performance.
+    </p>
+  </div>
+</main>

@@ -1,0 +1,65 @@
+---
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Track Training",
+    description:
+      "Structured track sessions designed to develop speed, endurance and race-specific fitness. From intervals and tempo work to race preparation, every session has a clear purpose and helps you become a faster, more efficient runner.",
+    icon: "stadium-outline",
+  },
+  {
+    title: "Cross Country",
+    description:
+      "Build strength, endurance and resilience on varied terrain and challenging courses. Cross country training develops the ability to adapt to hills, surfaces and changing conditions while building the strength needed to perform when racing gets tough.",
+    icon: "tree",
+  },
+  {
+    title: "Sprint Training",
+    description:
+      "Develop explosive speed, running mechanics and power through focused sprint training. We work on acceleration, technique and speed to help every athlete run more efficiently and unlock their full potential.",
+    icon: "run",
+  }
+];
+---
+
+<div class="mt-16 pb-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Our Philosophy
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    We believe every runner has the potential to become better, stronger and faster.
+Progress starts with consistent training, but true performance is built through patience, discipline and purpose.
+We focus on quality over shortcuts, developing the athlete step by step and building strong foundations for long-term success.
+Every session has a purpose, and every challenge is an opportunity to learn and improve.
+We believe in training hard, but also in listening to the body and respecting the importance of recovery.
+We value commitment, resilience and the mindset to keep pushing when things get difficult.
+Most importantly, we believe running is better when we share the journey, support each other and celebrate progress together.
+At Academy of Speed, we don't just train runners — we build athletes, confidence and a lifelong passion for running.
+  </p>
+</div>
+
+<div class="mt-16 pb-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Our Coach
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Behind every great athlete is a coach who knows when to push, when to listen and when to believe. Our coaching is built around purposeful training, individual development and a long-term approach to performance. We work closely with every athlete to develop their strengths, improve their weaknesses and build confidence. Most importantly, we aim to make every session meaningful, challenging and enjoyable.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
