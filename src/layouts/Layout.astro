@@ -10,18 +10,16 @@ export interface Props {
   title: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
-
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
-).toString();
+const site = Astro.site ?? Astro.url;
+const canonicalURL = new URL(Astro.url.pathname, site).toString();
+const ogImage = new URL("/opengraph.jpg", site).toString();
 
 const { title } = Astro.props;
 
-const makeTitle = title
-  ? title + " | " + "AcademyOfSpeed"
-  : "AcademyOfSpeed - Starter Template for Astro with Tailwind CSS";
+const siteName = "Academy of Speed";
+const description =
+  "Academy of Speed is a community of runners driven to improve, compete and reach their full potential. Expert coaching, purposeful training, and a team that pushes each other forward.";
+const makeTitle = title ? `${title} | ${siteName}` : `${siteName} — Run Faster Together`;
 ---
 
 <!doctype html>
@@ -33,22 +31,34 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={makeTitle}
-      description="AcademyOfSpeed is a starter website template for Astro built with TailwindCSS."
+      description={description}
       canonical={canonicalURL}
       twitter={{
-        creator: "@surjithctly",
-        site: "rezsoDubiczki",
+        site: siteName,
         card: "summary_large_image",
+      }}
+      extend={{
+        meta: [
+          { name: "twitter:title", content: makeTitle },
+          { name: "twitter:description", content: description },
+          { name: "twitter:image", content: ogImage },
+        ],
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `AcademyOfSpeed - Starter Template for Astro`,
-          image: resolvedImageWithDomain,
+          title: makeTitle,
+          image: ogImage,
+        },
+        optional: {
+          description,
+          siteName,
         },
         image: {
-          alt: "AcademyOfSpeed Homepage Screenshot",
+          alt: "Academy of Speed athletes racing on the track",
+          width: 1200,
+          height: 630,
         },
       }}
     />
