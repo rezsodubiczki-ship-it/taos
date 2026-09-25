@@ -27,7 +27,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 From developing athletes to experienced competitors, we train together, support each other and celebrate every step forward.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mx-auto max-w-6xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <a href={`/team/${teamMemberEntry.slug}`} class="group">
