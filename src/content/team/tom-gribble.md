@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Tom Gribble"
-title: "400m QLD Championships 5th"
+title: "U17 Australian Champion Cross Country "
 avatar: "./tom-gribble.jpg"
 birthYear: 2010
 bestResults:

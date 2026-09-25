@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Jack Taylor"
-title: "100m QA Shield Winner"
+title: "State Representative Cross Country"
 avatar: "./jack-taylor.jpg"
 birthYear: 2013
 bestResults:

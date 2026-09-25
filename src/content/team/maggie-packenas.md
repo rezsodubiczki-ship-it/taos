@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Maggie Packenas"
-title: "3000m SEQ Cross Country Bronze"
+title: "Districts Representative 1500m"
 avatar: "./maggie-packenas.jpg"
 birthYear: 2012
 bestResults:

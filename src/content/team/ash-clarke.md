@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Ash Clarke"
-title: "3000m QLD Cross Country 4th"
+title: "State Silver Medalist 2k Steeple Chase "
 avatar: "./ash-clarke.jpg"
 birthYear: 2011
 bestResults:

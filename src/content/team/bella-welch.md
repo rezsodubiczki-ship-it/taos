@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Bella Welch"
-title: "200m QLD All Schools Silver"
+title: "State Champion 2k Steeple Chase "
 avatar: "./bella-welch.jpg"
 birthYear: 2011
 bestResults:

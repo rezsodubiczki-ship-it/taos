@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Liliana Titley"
-title: "1500m QA Shield Winner"
+title: "2 x Australian Champion 1500m"
 avatar: "./liliana-titley.jpg"
 birthYear: 2013
 bestResults:

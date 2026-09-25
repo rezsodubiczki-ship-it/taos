@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Katelyn Chong"
-title: "100m Met East Silver"
+title: "Regional Representative 800m"
 avatar: "./katleyn-chong.jpg"
 birthYear: 2013
 bestResults:

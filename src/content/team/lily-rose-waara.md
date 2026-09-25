@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Lily Rose Waara"
-title: "800m All Schools Finalist"
+title: "State Representative Cross Country "
 avatar: "./lily-rose-waara.jpg"
 birthYear: 2014
 bestResults:

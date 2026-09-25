@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Sophia O'Brien"
-title: "200m Gold Coast Classic Winner"
+title: "State Representative National XC - 14th"
 avatar: "./sophia-obrien.jpg"
 birthYear: 2011
 bestResults:

@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Leila Dubiczki"
-title: "400m Met East Champion"
+title: "State Champion 1500m"
 avatar: "./leila-dubiczki.jpg"
 birthYear: 2013
 bestResults:

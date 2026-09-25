@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Alex Clark"
-title: "1500m QLD Championships Bronze"
+title: "Gold Coast Half Marathon 16-18 winner"
 avatar: "./alex-clark.jpg"
 birthYear: 2010
 bestResults:
