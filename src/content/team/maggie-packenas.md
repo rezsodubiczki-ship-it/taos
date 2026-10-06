@@ -3,27 +3,28 @@ draft: false
 name: "Maggie Packenas"
 title: "Districts Representative 1500m"
 avatar: "./maggie-packenas.jpg"
+run: "./maggie-packenas-run.jpg"
 birthYear: 2012
 bestResults:
   - year: 2026
-    competition: South East Queensland Cross Country
-    event: 4km
-    result: "3rd — Bronze"
-  - year: 2026
-    competition: Queensland All Schools
+    competition: Met East District Championships
     event: 1500m
-    result: "4th"
-  - year: 2025
-    competition: QA Shield
-    event: 3000m
     result: "2nd — Silver"
+  - year: 2026
+    competition: QA Shield
+    event: 1500m
+    result: "3rd — Bronze"
+  - year: 2025
+    competition: Met East District Championships
+    event: 800m
+    result: "4th"
 personalBests:
+  - event: 800m
+    time: "2:32.41"
   - event: 1500m
-    time: "5:04.33"
+    time: "5:06.88"
   - event: 3000m
-    time: "10:58.12"
-  - event: 5000m
-    time: "19:41"
+    time: "11:08.15"
 ---
 
-Maggie is a steady endurance runner who likes to work from the front of the pack. She handles longer sessions well and is learning to keep her cadence when the race gets messy in the last kilometre. Cross country has given her a tough streak, and that is starting to show on the track over 1500 and 3000.
+Maggie is building a solid 1500m base and earned her district selection with even, sensible racing. She is learning to stay in contact when the pace lifts and to finish the last 200 with better posture. Consistent training weeks have been the making of her this season.

@@ -3,27 +3,26 @@ draft: false
 name: "Jack Taylor"
 title: "State Representative Cross Country"
 avatar: "./jack-taylor.jpg"
+run: "./jack-taylor-run.jpg"
 birthYear: 2013
 bestResults:
   - year: 2026
-    competition: QA Shield
-    event: 100m
-    result: "1st — Gold"
+    competition: Queensland Cross Country Championships
+    event: 3km
+    result: "5th"
+  - year: 2026
+    competition: South East Queensland Cross Country
+    event: 3km
+    result: "2nd — Silver"
   - year: 2026
     competition: Queensland All Schools
-    event: 200m
-    result: "3rd — Bronze"
-  - year: 2025
-    competition: Met East Championships
-    event: 100m
-    result: "2nd — Silver"
+    event: Cross country
+    result: "State team"
 personalBests:
-  - event: 100m
-    time: "13.41"
-  - event: 200m
-    time: "27.86"
-  - event: 400m
-    time: "1:07.22"
+  - event: 1500m
+    time: "4:54.20"
+  - event: 3000m
+    time: "10:28.63"
 ---
 
-Jack is a lively sprinter with a sharp first step and a lot of race energy. Block work and drive-phase mechanics have been the focus this season, and his 200m is starting to look as strong as his 100. He brings good humour to the group and still switches on when the gun goes.
+Jack has the bite of a cross country runner — he handles hills, tight packs and messy starts without losing his head. State representation came from a string of honest races rather than one lucky day. He still has speed to find on the track, but the winter work has given him a real engine.

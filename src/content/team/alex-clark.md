@@ -3,27 +3,28 @@ draft: false
 name: "Alex Clark"
 title: "Gold Coast Half Marathon 16-18 winner"
 avatar: "./alex-clark.jpg"
+run: "./alex-clark-run.jpg"
 birthYear: 2010
 bestResults:
   - year: 2026
-    competition: Queensland Track & Field Championships
-    event: 1500m
-    result: "3rd — Bronze"
+    competition: Gold Coast Airport Marathon
+    event: Half Marathon (16–18)
+    result: "1st — Gold"
   - year: 2026
-    competition: Australian Junior Championships
-    event: 1500m
-    result: "9th"
-  - year: 2025
-    competition: Queensland All Schools
-    event: 800m
+    competition: Queensland Cross Country Championships
+    event: 6km
     result: "2nd — Silver"
+  - year: 2025
+    competition: Queensland Track & Field Championships
+    event: 5000m
+    result: "3rd — Bronze"
 personalBests:
-  - event: 800m
-    time: "2:06.44"
-  - event: 1500m
-    time: "4:18.91"
   - event: 3000m
-    time: "9:22.07"
+    time: "9:04.22"
+  - event: 5000m
+    time: "15:58"
+  - event: Half marathon
+    time: "1:18:41"
 ---
 
-Alex is a middle-distance runner with a sharp kick and a growing aerobic base. He races with patience now, rather than going to the front too early, and his last 300m has become a real weapon. He trains with maturity and is starting to look comfortable at national level.
+Alex has the engine of a longer-distance runner and is comfortable sitting at a hard rhythm for a long time. The Gold Coast half marathon showed he can race with patience and still have a kick in the last kilometres. He trains with maturity, handles the aerobic work well, and is starting to look like a real road and cross country threat.

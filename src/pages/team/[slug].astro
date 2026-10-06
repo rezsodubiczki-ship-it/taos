@@ -23,13 +23,13 @@ const { Content } = await entry.render();
   <Container>
     <div class="flex flex-col items-center text-center mt-16">
       <Picture
-        src={entry.data.avatar}
-        alt={entry.data.name}
+        src={entry.data.run}
+        alt={`${entry.data.name} running`}
         widths={[400, 800]}
         sizes="(max-width: 800px) 90vw, 480px"
         width={800}
-        height={800}
-        class="w-full max-w-md rounded-sm object-cover object-center aspect-square bg-white"
+        height={1067}
+        class="w-full max-w-md rounded-sm object-cover object-center aspect-[3/4] bg-white"
       />
       <h1 class="mt-6 text-3xl lg:text-4xl font-bold text-gray-800">
         {entry.data.name}

@@ -1,29 +1,30 @@
 ---
 draft: false
 name: "Ash Clarke"
-title: "State Silver Medalist 2k Steeple Chase "
+title: "State Silver Medalist 2k Steeple Chase"
 avatar: "./ash-clarke.jpg"
+run: "./ash-clarke-run.jpg"
 birthYear: 2011
 bestResults:
   - year: 2026
-    competition: Queensland Cross Country Championships
-    event: 4km
-    result: "4th"
+    competition: Queensland Track & Field Championships
+    event: 2000m steeplechase
+    result: "2nd — Silver"
   - year: 2026
+    competition: Queensland All Schools
+    event: 2000m steeplechase
+    result: "2nd — Silver"
+  - year: 2025
     competition: Queensland Track & Field Championships
     event: 3000m
-    result: "3rd — Bronze"
-  - year: 2025
-    competition: South East Queensland Cross Country
-    event: 4km
-    result: "2nd — Silver"
+    result: "4th"
 personalBests:
   - event: 1500m
-    time: "4:29.17"
+    time: "4:17.92"
+  - event: 2000m steeplechase
+    time: "6:22.48"
   - event: 3000m
-    time: "9:41.63"
-  - event: 5000m
-    time: "16:52"
+    time: "9:08.31"
 ---
 
-Ash is an endurance runner with a high work rate and a calm race face. He handles volume well, sits in the pack without panic, and is learning when to push rather than just covering moves. Winter cross country has given him a real engine for the track season.
+Ash has the strength and rhythm for the steeplechase. He clears the barriers cleanly and is learning to stay tall after the water jump instead of losing a few metres. State silver was a step forward, and the 3000m speed underneath it is still improving.

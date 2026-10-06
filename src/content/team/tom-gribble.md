@@ -1,29 +1,30 @@
 ---
 draft: false
 name: "Tom Gribble"
-title: "U17 Australian Champion Cross Country "
+title: "U17 Australian Champion Cross Country"
 avatar: "./tom-gribble.jpg"
+run: "./tom-gribble-run.jpg"
 birthYear: 2010
 bestResults:
   - year: 2026
-    competition: Queensland Track & Field Championships
-    event: 400m
-    result: "5th"
-  - year: 2026
-    competition: Queensland Relay Championships
-    event: 4x400m
-    result: "2nd — Silver"
-  - year: 2025
-    competition: Met East Championships
-    event: 800m
+    competition: Australian Cross Country Championships
+    event: 6km (U17)
     result: "1st — Gold"
+  - year: 2026
+    competition: Queensland Cross Country Championships
+    event: 6km
+    result: "1st — Gold"
+  - year: 2026
+    competition: Queensland Track & Field Championships
+    event: 3000m
+    result: "2nd — Silver"
 personalBests:
-  - event: 200m
-    time: "24.18"
-  - event: 400m
-    time: "53.64"
-  - event: 800m
-    time: "2:08.91"
+  - event: 1500m
+    time: "4:04.88"
+  - event: 3000m
+    time: "8:41.16"
+  - event: 5000m
+    time: "15:12"
 ---
 
-Tom sits in that useful space between sprint and middle distance. His 400m has been the priority, and he is learning to run the first 200 with more control so he has something left off the last bend. He is a reliable training partner and a calm presence on championship day.
+Tom is a cross country racer first — he likes the fight, the hills and the long surge that breaks a field. The U17 national title came from a controlled first half and a decisive move when it counted. That same strength is starting to look dangerous on the track over 3000 and 5000.

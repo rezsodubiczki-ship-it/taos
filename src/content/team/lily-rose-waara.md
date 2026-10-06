@@ -1,27 +1,30 @@
 ---
 draft: false
 name: "Lily Rose Waara"
-title: "State Representative Cross Country "
+title: "State Representative Cross Country"
 avatar: "./lily-rose-waara.jpg"
+run: "./lily-rose-waara-run.jpg"
 birthYear: 2014
 bestResults:
   - year: 2026
-    competition: Queensland All Schools
-    event: 800m
+    competition: Queensland Cross Country Championships
+    event: 3km
     result: "6th"
   - year: 2026
-    competition: Met East Championships
-    event: 1500m
-    result: "3rd — Bronze"
+    competition: Queensland All Schools
+    event: Cross country
+    result: "State team"
   - year: 2025
-    competition: QA Shield
-    event: 800m
-    result: "2nd — Silver"
+    competition: South East Queensland Cross Country
+    event: 3km
+    result: "3rd — Bronze"
 personalBests:
   - event: 800m
-    time: "2:36.18"
+    time: "2:34.90"
   - event: 1500m
-    time: "5:22.41"
+    time: "5:16.44"
+  - event: 3000m
+    time: "11:22.18"
 ---
 
-Lily Rose is still early in her racing years but already races with composure beyond her age. She settles into rhythm quickly and is learning to hold her form in the last 150 metres. She trains with a smile, takes instruction well, and is building a strong aerobic base for the seasons ahead.
+Lily Rose is still early in her racing years but already looks at home in a cross country pack. She settles quickly, stays relaxed on the hills, and finishes with a smile even when the race has been hard. State representation is a big step, and the aerobic base she is building will serve her for a long time.

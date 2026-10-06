@@ -3,27 +3,28 @@ draft: false
 name: "Liliana Titley"
 title: "2 x Australian Champion 1500m"
 avatar: "./liliana-titley.jpg"
+run: "./liliana-titley-run.jpg"
 birthYear: 2013
 bestResults:
   - year: 2026
-    competition: QA Shield
+    competition: Australian Junior Championships
+    event: 1500m
+    result: "1st — Gold"
+  - year: 2025
+    competition: Australian Junior Championships
     event: 1500m
     result: "1st — Gold"
   - year: 2026
-    competition: Queensland All Schools
-    event: 800m
-    result: "5th"
-  - year: 2025
-    competition: South East Queensland Cross Country
-    event: 3km
-    result: "6th"
+    competition: Queensland Track & Field Championships
+    event: 1500m
+    result: "1st — Gold"
 personalBests:
   - event: 800m
-    time: "2:31.09"
+    time: "2:13.88"
   - event: 1500m
-    time: "5:08.66"
+    time: "4:31.06"
   - event: 3000m
-    time: "11:14.28"
+    time: "9:46.22"
 ---
 
-Liliana has a smooth, efficient stride and a good feel for even pacing. She is happiest in the 1500 but the 800 is coming along as her speed endurance improves. She is consistent from week to week and asks smart questions after sessions.
+Liliana is a natural 1500m racer with a long, efficient stride and a kick that shows up on championship day. Back-to-back national titles have come from clean tactics and the confidence to go when it matters. She trains with quiet focus, recovers well, and sets a high standard for the group.

@@ -3,25 +3,28 @@ draft: false
 name: "Katelyn Chong"
 title: "Regional Representative 800m"
 avatar: "./katleyn-chong.jpg"
+run: "./katleyn-chong-run.jpg"
 birthYear: 2013
 bestResults:
   - year: 2026
     competition: Met East Championships
-    event: 100m
+    event: 800m
     result: "2nd — Silver"
   - year: 2026
     competition: QA Shield
-    event: 200m
+    event: 800m
     result: "3rd — Bronze"
   - year: 2025
-    competition: Queensland All Schools
-    event: 100m
-    result: "7th"
+    competition: Met East Championships
+    event: 1500m
+    result: "5th"
 personalBests:
-  - event: 100m
-    time: "13.72"
-  - event: 200m
-    time: "28.41"
+  - event: 400m
+    time: "1:06.18"
+  - event: 800m
+    time: "2:27.94"
+  - event: 1500m
+    time: "5:12.40"
 ---
 
-Katelyn is a compact, aggressive sprinter who reacts well to the gun. Starts and acceleration have been the main project this season, and her 200m is catching up as she holds speed further down the straight. She is quiet in the warm-up and very focused once she is in the blocks.
+Katelyn is an 800m runner with a tidy stride and a growing ability to hold her form down the back straight. Regional representation came from consistent racing, not one big outlier. She is working on a stronger first 400 so she is in the race when it opens up.
