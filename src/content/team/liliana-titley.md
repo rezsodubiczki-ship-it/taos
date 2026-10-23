@@ -1,30 +1,16 @@
 ---
 draft: false
 name: "Liliana Titley"
-title: "2 x Australian Champion 1500m"
+title: "1500m Australian Champion"
 avatar: "./liliana-titley.jpg"
 run: "./liliana-titley-run.jpg"
-birthYear: 2013
 bestResults:
-  - year: 2026
-    competition: Australian Junior Championships
-    event: 1500m
-    result: "1st — Gold"
-  - year: 2025
-    competition: Australian Junior Championships
-    event: 1500m
-    result: "1st — Gold"
-  - year: 2026
-    competition: Queensland Track & Field Championships
-    event: 1500m
-    result: "1st — Gold"
-personalBests:
-  - event: 800m
-    time: "2:13.88"
-  - event: 1500m
-    time: "4:31.06"
-  - event: 3000m
-    time: "9:46.22"
+  - "🇦🇺 AUSTRALIAN CHAMPION - U14 1500m – Australian Little Athletics Championships"
+  - "🥇 3 State Gold Medals"
+  - "🥈 3 State Silver Medals"
+  - "🥉 1 State Bronze Medal"
+  - "🏆 7 STATE MEDALS IN TOTAL!"
 ---
 
-Liliana is a natural 1500m racer with a long, efficient stride and a kick that shows up on championship day. Back-to-back national titles have come from clean tactics and the confidence to go when it matters. She trains with quiet focus, recovers well, and sets a high standard for the group.
+What an incredible 2026 season, Lily! Congratulations on your achievements and all the hard work you've put in.
+

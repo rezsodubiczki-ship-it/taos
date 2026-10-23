@@ -44,9 +44,13 @@ From developing athletes to experienced competitors, we train together, support 
 
             <div class="mt-4 text-center">
               <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
-              <h3 class="text-sm text-slate-500">
-                {teamMemberEntry.data.title}
-              </h3>
+              {
+                teamMemberEntry.data.title && (
+                  <h3 class="text-sm text-slate-500">
+                    {teamMemberEntry.data.title}
+                  </h3>
+                )
+              }
             </div>
           </a>
         ))

@@ -1,9 +1,10 @@
 ---
-import Contactform from "@/components/contactform.astro";
+import { Picture } from "astro:assets";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
+import coachImage from "@/assets/coach.png";
 
 const contactEmail =
   import.meta.env.PUBLIC_CONTACT_EMAIL || "brad@academyofspeed.com";
@@ -13,29 +14,40 @@ const contactEmail =
   <Container>
     <Sectionhead>
       <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
+      <Fragment slot="desc">We are here to help.</Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact AcademyOfSpeed</h2>
+    <div
+      class="flex flex-col md:flex-row md:items-center md:justify-center gap-4 md:gap-6 mx-auto max-w-3xl mt-16">
+      <div class="w-full flex justify-center shrink-0">
+        <div class="w-[14rem] max-w-[50%]">
+          <Picture
+            src={coachImage}
+            alt="Academy of Speed coach"
+            widths={[160, 240, 320]}
+            sizes="(max-width: 768px) 50vw, 224px"
+            width={320}
+            class="block w-full h-auto mx-auto object-contain"
+          />
+        </div>
+      </div>
+      <div class="text-center md:text-left">
+        <h2 class="font-medium text-2xl text-gray-800">Contact Academy of Speed</h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say?
+          Get in touch by email or phone.
         </p>
-        <div class="mt-5">
+        <div class="mt-5 flex flex-col items-center md:items-start">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
               href={`mailto:${contactEmail}`}>{contactEmail}</a
             >
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
               href="tel:+61 (4) 1234 567">+61 (4) 1234 567</a
             >
           </div>
         </div>
-      </div>
-      <div>
-        <Contactform />
       </div>
     </div>
   </Container>

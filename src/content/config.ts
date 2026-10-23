@@ -5,24 +5,10 @@ const teamCollection = defineCollection({
     z.object({
       draft: z.boolean(),
       name: z.string(),
-      title: z.string(),
+      title: z.string().optional(),
       avatar: image(),
       run: image(),
-      birthYear: z.number(),
-      bestResults: z.array(
-        z.object({
-          year: z.number(),
-          competition: z.string(),
-          event: z.string(),
-          result: z.string(),
-        })
-      ),
-      personalBests: z.array(
-        z.object({
-          event: z.string(),
-          time: z.string(),
-        })
-      ),
+      bestResults: z.array(z.string()).optional(),
     }),
 });
 
