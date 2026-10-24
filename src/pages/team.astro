@@ -30,7 +30,7 @@ From developing athletes to experienced competitors, we train together, support 
     <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mx-auto max-w-6xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
-          <a href={`/team/${teamMemberEntry.slug}`} class="group">
+          <a href={`/team/${teamMemberEntry.id}`} class="group">
             <div class="w-full aspect-square">
               <Picture
                 src={teamMemberEntry.data.avatar}
