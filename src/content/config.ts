@@ -9,6 +9,14 @@ const teamCollection = defineCollection({
       avatar: image(),
       run: image(),
       bestResults: z.array(z.string()).optional(),
+      personalBests: z
+        .array(
+          z.object({
+            event: z.string(),
+            time: z.string(),
+          })
+        )
+        .optional(),
     }),
 });
 

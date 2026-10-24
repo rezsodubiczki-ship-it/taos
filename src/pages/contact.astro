@@ -7,7 +7,7 @@ import { Icon } from "astro-icon/components";
 import coachImage from "@/assets/coach.png";
 
 const contactEmail =
-  import.meta.env.PUBLIC_CONTACT_EMAIL || "brad@academyofspeed.com";
+  import.meta.env.PUBLIC_CONTACT_EMAIL || "runninghands@outlook.com ";
 ---
 
 <Layout title="Contact">
@@ -18,9 +18,9 @@ const contactEmail =
     </Sectionhead>
 
     <div
-      class="flex flex-col md:flex-row md:items-center md:justify-center gap-4 md:gap-6 mx-auto max-w-3xl mt-16">
-      <div class="w-full flex justify-center shrink-0">
-        <div class="w-[14rem] max-w-[50%]">
+      class="flex flex-col items-center md:flex-row md:items-center md:justify-center gap-4 md:gap-6 mx-auto w-fit max-w-full mt-16">
+      <div class="flex justify-center shrink-0">
+        <div class="w-[14rem] max-w-[50%] md:max-w-none">
           <Picture
             src={coachImage}
             alt="Academy of Speed coach"
@@ -31,7 +31,7 @@ const contactEmail =
           />
         </div>
       </div>
-      <div class="text-center md:text-left">
+      <div class="text-center md:text-left shrink-0">
         <h2 class="font-medium text-2xl text-gray-800">Contact Academy of Speed</h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
           Get in touch by email or phone.
@@ -44,7 +44,7 @@ const contactEmail =
           </div>
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+61 (4) 1234 567">+61 (4) 1234 567</a
+              href="tel:+61449090594">+61 (4) 49090594</a
             >
           </div>
         </div>

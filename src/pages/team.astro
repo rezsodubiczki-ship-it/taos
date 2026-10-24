@@ -35,9 +35,12 @@ From developing athletes to experienced competitors, we train together, support 
               <Picture
                 src={teamMemberEntry.data.avatar}
                 alt={teamMemberEntry.data.name}
-                sizes="(max-width: 800px) 100vw, 400px"
-                width={400}
-                height={400}
+                widths={[400, 800, 1200]}
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 240px"
+                width={800}
+                height={800}
+                quality={90}
+                formats={["webp", "jpg"]}
                 class="w-full rounded-sm transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
               />
             </div>

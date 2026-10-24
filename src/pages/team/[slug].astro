@@ -25,10 +25,12 @@ const { Content } = await entry.render();
       <Picture
         src={entry.data.run}
         alt={`${entry.data.name} running`}
-        widths={[400, 800]}
-        sizes="(max-width: 800px) 90vw, 480px"
+        widths={[480, 800, 1200]}
+        sizes="(max-width: 768px) 90vw, 448px"
         width={800}
         height={1067}
+        quality={90}
+        formats={["webp", "jpg"]}
         class="w-full max-w-md rounded-sm object-cover object-center aspect-[3/4] bg-white"
       />
       <h1 class="mt-6 text-3xl lg:text-4xl font-bold text-gray-800">
@@ -61,6 +63,22 @@ const { Content } = await entry.render();
 
       <section class="mt-12">
         <h2 class="text-xl font-semibold text-gray-800">Personal bests</h2>
+        {
+          entry.data.personalBests && entry.data.personalBests.length > 0 && (
+            <ul class="mt-4 grid sm:grid-cols-3 gap-4">
+              {entry.data.personalBests.map((item) => (
+                <li class="rounded-md border border-slate-200 px-4 py-4 text-center">
+                  <p class="text-lg leading-relaxed text-slate-600">
+                    {item.event}
+                  </p>
+                  <p class="mt-1 text-lg leading-relaxed text-slate-600">
+                    {item.time}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          )
+        }
       </section>
 
       <div class="text-center mt-12">
