@@ -2,12 +2,12 @@
 draft: false
 name: "Leila Dubiczki"
 birthYear: 2014
-title: "1500m – Queensland State Championships"
+title: "1500m QLD State Championships"
 avatar: "./leila-dubiczki.jpg"
 run: "./leila-dubiczki-run.jpg"
 bestResults:
-  - "🥇 1500m – Queensland State Championships"
-  - "4th – Queensland School Cross Country"
+  - "🥇 1500m Queensland State Championships"
+  - "4th Queensland School Cross Country"
   - "🥇 Australian All School Cross Country Team Gold"
   - "🥈 Australian All School Cross Country Relay Silver"
 personalBests:
