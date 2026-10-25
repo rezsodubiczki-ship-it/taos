@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+import { headerStyle } from "@/config/brand";
 import Footer from "@/components/footer.astro";
 import Navbar from "@/components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
@@ -15,6 +16,7 @@ const canonicalURL = new URL(Astro.url.pathname, site).toString();
 const ogImage = new URL("/opengraph.jpg", site).toString();
 
 const { title } = Astro.props;
+const blend = headerStyle === "logo";
 
 const siteName = "Academy of Speed";
 const description =
@@ -66,9 +68,15 @@ const makeTitle = title ? `${title} | ${siteName}` : `${siteName} — Run Faster
     />
   </head>
   <body>
-    <Navbar />
-    <slot />
-    <Footer />
+    <Navbar blend={blend} />
+    <div
+      class:list={[
+        blend &&
+          "flow-root bg-[linear-gradient(180deg,#f7c506_0%,#f7c506_1.5rem,#ffffff_48rem)]",
+      ]}>
+      <slot />
+      <Footer />
+    </div>
     <style is:global>
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */

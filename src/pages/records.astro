@@ -1,0 +1,201 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+
+type RecordEntry = {
+  label: string;
+  mark: string;
+  athlete: string;
+  retired?: boolean;
+};
+
+type RecordGroup = {
+  title: string;
+  count: number;
+  records: RecordEntry[];
+};
+
+const groups: RecordGroup[] = [
+  {
+    title: "Queensland Athletics (QA)",
+    count: 6,
+    records: [
+      { label: "U14 — 60m", mark: "7.99", athlete: "Lincoln Dealy" },
+      { label: "U14 — 100m", mark: "11.35", athlete: "Sekou Kanneh" },
+      {
+        label: "U16 — 800m",
+        mark: "2:07.46",
+        athlete: "Emma Fryga",
+        retired: true,
+      },
+      { label: "U16 — 800m", mark: "2:06.27", athlete: "Emma Fryga" },
+      {
+        label: "U18 — 800m",
+        mark: "2:03.37",
+        athlete: "Emma Fryga",
+        retired: true,
+      },
+      {
+        label: "U20 — 800m",
+        mark: "2:03.37",
+        athlete: "Emma Fryga",
+        retired: true,
+      },
+    ],
+  },
+  {
+    title: "Queensland Athletics (QA) Para",
+    count: 8,
+    records: [
+      {
+        label: "100m — U20 (To1)",
+        mark: "12.63 (1.5)",
+        athlete: "Imelda Middleton",
+      },
+      {
+        label: "100m — Opens (To1)",
+        mark: "12.63 (1.5)",
+        athlete: "Imelda Middleton",
+      },
+      {
+        label: "200m — U20 (To1)",
+        mark: "26.00 (2.0)",
+        athlete: "Imelda Middleton",
+      },
+      {
+        label: "200m — Opens (To1)",
+        mark: "26.00 (2.0)",
+        athlete: "Imelda Middleton",
+      },
+      {
+        label: "400m — Opens (To1)",
+        mark: "56.24 (1.5)",
+        athlete: "Liam Wyatts",
+      },
+      {
+        label: "3000m — Opens (T20)",
+        mark: "11:18.42",
+        athlete: "Tom Gribble",
+      },
+      {
+        label: "3000m — U20 (T20)",
+        mark: "11:18.42",
+        athlete: "Tom Gribble",
+      },
+      {
+        label: "3000m — U17 (T20)",
+        mark: "11:18.42",
+        athlete: "Tom Gribble",
+      },
+    ],
+  },
+  {
+    title: "Queensland Athletics (QA) Relay Records",
+    count: 3,
+    records: [
+      { label: "U14 — 4 × 100m", mark: "46.03", athlete: "Josh Potts" },
+      { label: "U14 — 4 × 200m", mark: "1:36.84", athlete: "Josh Potts" },
+      { label: "U16 — 4 × 100m", mark: "47.68", athlete: "Janique Mili" },
+    ],
+  },
+  {
+    title: "Queensland School Sports Records",
+    count: 3,
+    records: [
+      { label: "13 years — 100m", mark: "11.36", athlete: "Sekou Kanneh" },
+      {
+        label: "14 years — 100m",
+        mark: "11.11",
+        athlete: "Sekou Kanneh",
+        retired: true,
+      },
+      { label: "15 years — 800m", mark: "2:08.43", athlete: "Emma Fryga" },
+    ],
+  },
+  {
+    title: "Queensland All Schools Record",
+    count: 2,
+    records: [
+      { label: "800m (15 years)", mark: "2:08.39", athlete: "Emma Fryga" },
+      { label: "1500m (15 years)", mark: "4:29.58", athlete: "Emma Fryga" },
+    ],
+  },
+];
+
+const totals = [
+  { label: "Total Queensland broken records", value: "22" },
+  { label: "Total Queensland current records", value: "18" },
+  {
+    label: "Queensland Athletics (QA) broken records",
+    value: "17",
+    note: "14 individual",
+  },
+  {
+    label: "Queensland Athletics (QA) current records",
+    value: "14",
+    note: "11 individual",
+  },
+];
+---
+
+<Layout title="Records">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Queensland State Records</Fragment>
+    </Sectionhead>
+
+    <div class="max-w-3xl mx-auto mt-16 mb-20 space-y-12">
+      {
+        groups.map((group) => (
+          <section>
+            <div class="flex items-baseline justify-between gap-4 border-b border-slate-200 pb-3">
+              <h2 class="text-xl font-semibold text-gray-800">{group.title}</h2>
+              <p class="text-sm font-medium text-slate-500">{group.count}</p>
+            </div>
+            <ul class="mt-2">
+              {group.records.map((record) => (
+                <li class="flex flex-col gap-1 border-b border-slate-100 py-3 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                  <p class:list={["text-gray-800", record.retired && "text-slate-400"]}>
+                    {record.label}
+                    {record.retired && (
+                      <span class="ml-1 text-slate-400" aria-hidden="true">
+                        *
+                      </span>
+                    )}
+                  </p>
+                  <p class="flex flex-wrap items-baseline gap-3 sm:justify-end">
+                    <span
+                      class:list={[
+                        "font-medium tabular-nums",
+                        record.retired ? "text-slate-400" : "text-gray-800",
+                      ]}>
+                      {record.mark}
+                    </span>
+                    <span class:list={[record.retired ? "text-slate-400" : "text-slate-500"]}>
+                      {record.athlete}
+                    </span>
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+
+      <section class="grid gap-4 sm:grid-cols-2">
+        {
+          totals.map((total) => (
+            <div class="rounded-lg border border-slate-200 px-5 py-4">
+              <p class="text-3xl font-semibold text-gray-800">{total.value}</p>
+              <p class="mt-1 text-slate-600">{total.label}</p>
+              {total.note && <p class="mt-1 text-sm text-slate-500">{total.note}</p>}
+            </div>
+          ))
+        }
+      </section>
+
+      <p class="text-sm text-slate-500">* Records no longer exist</p>
+    </div>
+  </Container>
+</Layout>
