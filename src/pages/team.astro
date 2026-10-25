@@ -6,8 +6,26 @@ import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 
 // Filter team entries with 'draft: false' & date before current date
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
+const oldestFirst = [
+  "mia-chizzoniti",
+  "oliver-apps",
+  "alex-clark",
+  "tom-gribble",
+  "katleyn-chong",
+  "ash-clarke",
+  "liliana-titley",
+  "jack-taylor",
+  "lily-rose-waara",
+  "leila-dubiczki",
+  "maggie-packenas",
+];
+
+const publishedTeamMembers = [...await getCollection("team", ({ data }) => {
   return !data.draft;
+})].sort((a, b) => {
+  const byYear = a.data.birthYear - b.data.birthYear;
+  if (byYear !== 0) return byYear;
+  return oldestFirst.indexOf(a.id) - oldestFirst.indexOf(b.id);
 });
 ---
 

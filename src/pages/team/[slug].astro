@@ -36,6 +36,7 @@ const { Content } = await render(entry);
       <h1 class="mt-6 text-3xl lg:text-4xl font-bold text-gray-800">
         {entry.data.name}
       </h1>
+      <p class="mt-2 text-lg text-slate-500">Born {entry.data.birthYear}</p>
     </div>
 
     <div class="mx-auto max-w-2xl mt-12 mb-20">
@@ -48,7 +49,7 @@ const { Content } = await render(entry);
 
       <section class="mt-12">
         <h2 class="text-xl font-semibold text-gray-800">
-          Best competition results
+          Best competition results 2026
         </h2>
         {
           entry.data.bestResults && entry.data.bestResults.length > 0 && (

@@ -1,6 +1,7 @@
 ---
 draft: false
 name: "Tom Gribble"
+birthYear: 2011
 title: "Cross Country Austral Champion"
 avatar: "./tom-gribble.jpg"
 run: "./tom-gribble-run.jpg"

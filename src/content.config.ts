@@ -7,6 +7,7 @@ const team = defineCollection({
     z.object({
       draft: z.boolean(),
       name: z.string(),
+      birthYear: z.number().int(),
       title: z.string().optional(),
       avatar: image(),
       run: image(),

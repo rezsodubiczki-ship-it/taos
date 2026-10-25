@@ -1,6 +1,7 @@
 ---
 draft: false
 name: "Liliana Titley"
+birthYear: 2013
 title: "1500m Australian Champion"
 avatar: "./liliana-titley.jpg"
 run: "./liliana-titley-run.jpg"
