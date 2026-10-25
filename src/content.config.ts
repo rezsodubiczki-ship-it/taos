@@ -20,6 +20,14 @@ const team = defineCollection({
           })
         )
         .optional(),
+      personalBests2024: z
+        .array(
+          z.object({
+            event: z.string(),
+            time: z.string(),
+          })
+        )
+        .optional(),
     }),
 });
 

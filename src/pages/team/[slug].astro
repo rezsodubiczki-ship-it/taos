@@ -62,10 +62,10 @@ const { Content } = await render(entry);
         }
       </section>
 
-      <section class="mt-12">
-        <h2 class="text-xl font-semibold text-gray-800">Personal bests</h2>
-        {
-          entry.data.personalBests && entry.data.personalBests.length > 0 && (
+      {
+        entry.data.personalBests && entry.data.personalBests.length > 0 && (
+          <section class="mt-12">
+            <h2 class="text-xl font-semibold text-gray-800">Personal bests</h2>
             <ul class="mt-4 grid sm:grid-cols-3 gap-4">
               {entry.data.personalBests.map((item) => (
                 <li class="rounded-md border border-slate-200 px-4 py-4 text-center">
@@ -78,9 +78,29 @@ const { Content } = await render(entry);
                 </li>
               ))}
             </ul>
-          )
-        }
-      </section>
+          </section>
+        )
+      }
+
+      {
+        entry.data.personalBests2024 && entry.data.personalBests2024.length > 0 && (
+          <section class="mt-12">
+            <h2 class="text-xl font-semibold text-gray-800">Personal best (2024)</h2>
+            <ul class="mt-4 grid sm:grid-cols-3 gap-4">
+              {entry.data.personalBests2024.map((item) => (
+                <li class="rounded-md border border-slate-200 px-4 py-4 text-center">
+                  <p class="text-lg leading-relaxed text-slate-600">
+                    {item.event}
+                  </p>
+                  <p class="mt-1 text-lg leading-relaxed text-slate-600">
+                    {item.time}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
 
       <div class="text-center mt-12">
         <a
