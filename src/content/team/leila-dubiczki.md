@@ -2,7 +2,7 @@
 draft: false
 name: "Leila Dubiczki"
 birthYear: 2014
-title: "1500m QLD State Championships"
+title: "1500m QLD State Champion"
 avatar: "./leila-dubiczki.jpg"
 run: "./leila-dubiczki-run.jpg"
 bestResults:
@@ -20,7 +20,7 @@ personalBests:
   - event: 3000m
     time: "10:54"
   - event: 5000m
-    time: "18:34"
+    time: "18:58"
 ---
 
 This year, Leila achieved a very special milestone, winning her first-ever state medal in the 1500m! In fact, she loved her gold medal so much that she slept with it for a whole week!

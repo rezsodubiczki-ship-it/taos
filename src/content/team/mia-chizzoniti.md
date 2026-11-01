@@ -1,6 +1,7 @@
 ---
 draft: false
 name: "Mia Chizzoniti"
+title: "QLD representative"
 birthYear: 2009
 avatar: "./mia-chizzoniti.jpg"
 run: "./mia-chizzoniti-run.jpg"

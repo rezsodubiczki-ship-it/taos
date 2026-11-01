@@ -1,0 +1,44 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+
+const athletes = [
+  {
+    name: "Sekou Kanneh",
+    detail: "Represented Australia at Deaflympics - 100m",
+  },
+  {
+    name: "Janique Mili",
+    detail: "Represented PNG at Oceania games - 100m",
+  },
+  {
+    name: "Indi Seeto",
+    detail: "Represented PNG for Rugby league World Cup 2026",
+  },
+  {
+    name: "Mohamed Kenneh",
+    detail: "MMA - 9-1",
+  },
+];
+---
+
+<Layout title="International Athletes">
+  <Container>
+    <div class="mt-16 text-center">
+      <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+        International Athletes
+      </h1>
+    </div>
+
+    <ul class="max-w-3xl mx-auto mt-16 mb-20 border-t border-slate-200">
+      {
+        athletes.map((athlete) => (
+          <li class="border-b border-slate-200 py-5">
+            <p class="text-xl font-semibold text-gray-800">{athlete.name}</p>
+            <p class="mt-1 text-lg text-slate-600">{athlete.detail}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </Container>
+</Layout>
