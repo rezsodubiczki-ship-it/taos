@@ -1,23 +1,33 @@
 ---
+import { Picture } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
+import sekou from "@/assets/international/sekou-kanneh.jpg";
+import janique from "@/assets/international/janique-mili.jpg";
+import mohamed from "@/assets/international/mohamed-kenneh.jpg";
+import indi from "@/assets/international/indi-seeto.jpg";
 
 const athletes = [
   {
     name: "Sekou Kanneh",
     detail: "Represented Australia at Deaflympics - 100m",
+    image: sekou,
   },
   {
     name: "Janique Mili",
     detail: "Represented PNG at Oceania games - 100m",
+    image: janique,
+    position: "object-[center_22%]",
   },
   {
     name: "Indi Seeto",
     detail: "Represented PNG for Rugby league World Cup 2026",
+    image: indi,
   },
   {
     name: "Mohamed Kenneh",
     detail: "MMA - 9-1",
+    image: mohamed,
   },
 ];
 ---
@@ -33,9 +43,29 @@ const athletes = [
     <ul class="max-w-3xl mx-auto mt-16 mb-20 border-t border-slate-200">
       {
         athletes.map((athlete) => (
-          <li class="border-b border-slate-200 py-5">
-            <p class="text-xl font-semibold text-gray-800">{athlete.name}</p>
-            <p class="mt-1 text-lg text-slate-600">{athlete.detail}</p>
+          <li class="flex flex-col gap-4 border-b border-slate-200 py-5 lg:flex-row lg:items-center lg:gap-5">
+            {athlete.image && (
+              <div class="order-2 w-full lg:order-1 lg:w-40 lg:shrink-0">
+                <Picture
+                  src={athlete.image}
+                  alt={athlete.name}
+                  widths={[480, 800, 1200]}
+                  sizes="(max-width: 1024px) 90vw, 160px"
+                  width={athlete.image.width}
+                  height={athlete.image.height}
+                  quality={90}
+                  formats={["webp", "jpg"]}
+                  class:list={[
+                    "aspect-[3/2] h-auto w-full rounded-sm border border-black object-cover lg:aspect-auto lg:h-28 lg:w-40",
+                    athlete.position ?? "object-center",
+                  ]}
+                />
+              </div>
+            )}
+            <div class="order-1 lg:order-2">
+              <p class="text-xl font-semibold text-gray-800">{athlete.name}</p>
+              <p class="mt-1 text-lg text-slate-600">{athlete.detail}</p>
+            </div>
           </li>
         ))
       }
